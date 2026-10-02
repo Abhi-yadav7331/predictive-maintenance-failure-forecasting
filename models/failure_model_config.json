@@ -1,0 +1,25 @@
+{
+    "model_name": "XGBoost Predictive Maintenance Classifier",
+    "target": "Machine failure",
+    "threshold": 0.29,
+    "features": [
+        "Type",
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+        "Torque [Nm]",
+        "Tool wear [min]"
+    ],
+    "excluded_leakage_features": [
+        "TWF",
+        "HDF",
+        "PWF",
+        "OSF",
+        "RNF"
+    ],
+    "test_samples": 2000,
+    "failure_samples_test": 68,
+    "failure_precision": 0.61,
+    "failure_recall": 0.82,
+    "failure_f1": 0.7
+}

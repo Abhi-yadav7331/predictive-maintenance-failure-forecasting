@@ -1,0 +1,36 @@
+{
+    "supported_faults": {
+        "HDF": {
+            "name": "Heat Dissipation Failure",
+            "threshold": 0.5
+        },
+        "PWF": {
+            "name": "Power Failure",
+            "threshold": 0.5
+        },
+        "OSF": {
+            "name": "Overstrain Failure",
+            "threshold": 0.5
+        }
+    },
+    "experimental_faults": {
+        "TWF": {
+            "name": "Tool Wear Failure",
+            "reason": "Low predictive performance and only 46 positive samples"
+        }
+    },
+    "unsupported_faults": {
+        "RNF": {
+            "name": "Random Failure",
+            "reason": "Only 19 positive samples; insufficient evidence for reliable supervised diagnosis"
+        }
+    },
+    "features": [
+        "Type",
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+        "Torque [Nm]",
+        "Tool wear [min]"
+    ]
+}

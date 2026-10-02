@@ -1,0 +1,27 @@
+{
+    "model_name": "Isolation Forest",
+    "dataset": "AI4I 2020",
+    "features": [
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+        "Torque [Nm]",
+        "Tool wear [min]"
+    ],
+    "n_estimators": 300,
+    "contamination": 0.08,
+    "random_state": 42,
+    "evaluation": {
+        "precision_vs_failure": 0.1325,
+        "failure_capture_recall": 0.312684,
+        "f1_vs_failure": 0.186128,
+        "roc_auc_score": 0.820179,
+        "pr_auc_score": 0.146171,
+        "random_pr_baseline": 0.0339
+    },
+    "interpretation": {
+        "prediction_1": "Normal",
+        "prediction_-1": "Anomaly",
+        "higher_custom_anomaly_score": "More anomalous"
+    }
+}
